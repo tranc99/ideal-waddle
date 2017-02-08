@@ -7,3 +7,5 @@ height = 180
 
 normalHeight = maxDwarfism < height < minAcromegaly
 alert normalHeight
+
+console.log x for x in [1..50]

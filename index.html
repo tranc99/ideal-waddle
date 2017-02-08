@@ -13,6 +13,7 @@
         Sample Results
       </ul>
       <button type="button" name="button" class="btn btn-warning" id="calculate-btn">Calculate</button>
+      <h2 id="numbers">Numbers</h2>
     </div>
   </body>
   <script type="text/javascript" src="jquery.js">
@@ -30,10 +31,13 @@
       var Calculator = new SimpleMath.Calculator();
       var result = $('<li>').html("5+6 = " + Calculator.add(5, 6));
       $("#SampleResults").append(result);
+
+      $("#numbers").html(numbers);
     }
 
     jQuery(document).ready(function() {
       $("#calculate-btn").click(calculate);
+
     });
   </script>
 </html>
